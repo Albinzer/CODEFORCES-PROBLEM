@@ -1,14 +1,19 @@
-#include<bits/stdc++.h>
+#include <iostream>
+
 using namespace std;
- 
- int main(){
-     int x,y;
-     
-     cout<< "Enter the value of integer x :";
-     cin >> x;
-     cout<< "Enter the value of integer y:";
-     cin >> y;
-     
-     cout <<"minumum "<<  min ( x,y)  <<  "  maximum " <<  max ( x,y) << endl;
-     return 0;
- }
+
+int main() {
+    int t;
+    cin >> t; // Number of test cases
+    
+    while (t--) {
+        int x, y;
+        cin >> x >> y; // Input x and y
+        
+        // Output the minimum and maximum of x and y
+        cout << min(x, y) << " " << max(x, y) << endl;
+    }
+    
+    return 0;
+}
+
